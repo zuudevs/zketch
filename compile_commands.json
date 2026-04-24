@@ -1,8 +1,1058 @@
 [
 {
   "directory": "D:/Project/zketch-v15/build",
-  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/zketch -ID:/Project/zketch-v15/PRIVATE -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -std=c++23 @CMakeFiles\\zketch.dir\\src\\main.cpp.obj.modmap -o CMakeFiles\\zketch.dir\\src\\main.cpp.obj -c D:\\Project\\zketch-v15\\src\\main.cpp",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_core_impl.dir\\src\\core\\application.cpp.obj.modmap -o CMakeFiles\\zketch_core_impl.dir\\src\\core\\application.cpp.obj -c D:\\Project\\zketch-v15\\src\\core\\application.cpp",
+  "file": "D:/Project/zketch-v15/src/core/application.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_core_impl.dir/src/core/application.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_core_impl.dir\\src\\core\\main_thread_queue.cpp.obj.modmap -o CMakeFiles\\zketch_core_impl.dir\\src\\core\\main_thread_queue.cpp.obj -c D:\\Project\\zketch-v15\\src\\core\\main_thread_queue.cpp",
+  "file": "D:/Project/zketch-v15/src/core/main_thread_queue.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_core_impl.dir/src/core/main_thread_queue.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_core_impl.dir\\src\\core\\message_loop.cpp.obj.modmap -o CMakeFiles\\zketch_core_impl.dir\\src\\core\\message_loop.cpp.obj -c D:\\Project\\zketch-v15\\src\\core\\message_loop.cpp",
+  "file": "D:/Project/zketch-v15/src/core/message_loop.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_core_impl.dir/src/core/message_loop.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_core_impl.dir\\src\\log\\logger.cpp.obj.modmap -o CMakeFiles\\zketch_core_impl.dir\\src\\log\\logger.cpp.obj -c D:\\Project\\zketch-v15\\src\\log\\logger.cpp",
+  "file": "D:/Project/zketch-v15/src/log/logger.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_core_impl.dir/src/log/logger.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_ui.dir\\src\\ui\\label.cpp.obj.modmap -o CMakeFiles\\zketch_ui.dir\\src\\ui\\label.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\label.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/label.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_ui.dir/src/ui/label.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_ui.dir\\src\\ui\\button.cpp.obj.modmap -o CMakeFiles\\zketch_ui.dir\\src\\ui\\button.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\button.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/button.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_ui.dir/src/ui/button.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_ui.dir\\src\\ui\\panel.cpp.obj.modmap -o CMakeFiles\\zketch_ui.dir\\src\\ui\\panel.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\panel.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/panel.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_ui.dir/src/ui/panel.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_ui.dir\\src\\ui\\window.cpp.obj.modmap -o CMakeFiles\\zketch_ui.dir\\src\\ui\\window.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\window.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/window.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_ui.dir/src/ui/window.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_ui.dir\\src\\event\\event_dispatcher.cpp.obj.modmap -o CMakeFiles\\zketch_ui.dir\\src\\event\\event_dispatcher.cpp.obj -c D:\\Project\\zketch-v15\\src\\event\\event_dispatcher.cpp",
+  "file": "D:/Project/zketch-v15/src/event/event_dispatcher.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_ui.dir/src/event/event_dispatcher.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_ui.dir\\src\\log\\logger.cpp.obj.modmap -o CMakeFiles\\zketch_ui.dir\\src\\log\\logger.cpp.obj -c D:\\Project\\zketch-v15\\src\\log\\logger.cpp",
+  "file": "D:/Project/zketch-v15/src/log/logger.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_ui.dir/src/log/logger.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_render.dir\\src\\render\\renderer.cpp.obj.modmap -o CMakeFiles\\zketch_render.dir\\src\\render\\renderer.cpp.obj -c D:\\Project\\zketch-v15\\src\\render\\renderer.cpp",
+  "file": "D:/Project/zketch-v15/src/render/renderer.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_render.dir/src/render/renderer.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_io.dir\\src\\io\\widget_serializer.cpp.obj.modmap -o CMakeFiles\\zketch_io.dir\\src\\io\\widget_serializer.cpp.obj -c D:\\Project\\zketch-v15\\src\\io\\widget_serializer.cpp",
+  "file": "D:/Project/zketch-v15/src/io/widget_serializer.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_io.dir/src/io/widget_serializer.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch_io.dir\\src\\io\\widget_parser.cpp.obj.modmap -o CMakeFiles\\zketch_io.dir\\src\\io\\widget_parser.cpp.obj -c D:\\Project\\zketch-v15\\src\\io\\widget_parser.cpp",
+  "file": "D:/Project/zketch-v15/src/io/widget_parser.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch_io.dir/src/io/widget_parser.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\zketch.dir\\src\\main.cpp.obj.modmap -o CMakeFiles\\zketch.dir\\src\\main.cpp.obj -c D:\\Project\\zketch-v15\\src\\main.cpp",
   "file": "D:/Project/zketch-v15/src/main.cpp",
   "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch.dir/src/main.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_error.dir\\test\\error\\test_error.cpp.obj.modmap -o CMakeFiles\\test_error.dir\\test\\error\\test_error.cpp.obj -c D:\\Project\\zketch-v15\\test\\error\\test_error.cpp",
+  "file": "D:/Project/zketch-v15/test/error/test_error.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_error.dir/test/error/test_error.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_logger.dir\\test\\log\\test_logger.cpp.obj.modmap -o CMakeFiles\\test_logger.dir\\test\\log\\test_logger.cpp.obj -c D:\\Project\\zketch-v15\\test\\log\\test_logger.cpp",
+  "file": "D:/Project/zketch-v15/test/log/test_logger.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_logger.dir/test/log/test_logger.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_logger.dir\\src\\log\\logger.cpp.obj.modmap -o CMakeFiles\\test_logger.dir\\src\\log\\logger.cpp.obj -c D:\\Project\\zketch-v15\\src\\log\\logger.cpp",
+  "file": "D:/Project/zketch-v15/src/log/logger.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_logger.dir/src/log/logger.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_pos.dir\\test\\metric\\test_pos.cpp.obj.modmap -o CMakeFiles\\test_pos.dir\\test\\metric\\test_pos.cpp.obj -c D:\\Project\\zketch-v15\\test\\metric\\test_pos.cpp",
+  "file": "D:/Project/zketch-v15/test/metric/test_pos.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_pos.dir/test/metric/test_pos.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_size.dir\\test\\metric\\test_size.cpp.obj.modmap -o CMakeFiles\\test_size.dir\\test\\metric\\test_size.cpp.obj -c D:\\Project\\zketch-v15\\test\\metric\\test_size.cpp",
+  "file": "D:/Project/zketch-v15/test/metric/test_size.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_size.dir/test/metric/test_size.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_arithmetic_clamp.dir\\test\\metric\\test_arithmetic_clamp.cpp.obj.modmap -o CMakeFiles\\test_arithmetic_clamp.dir\\test\\metric\\test_arithmetic_clamp.cpp.obj -c D:\\Project\\zketch-v15\\test\\metric\\test_arithmetic_clamp.cpp",
+  "file": "D:/Project/zketch-v15/test/metric/test_arithmetic_clamp.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_arithmetic_clamp.dir/test/metric/test_arithmetic_clamp.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_native_wrapper.dir\\test\\util\\test_native_wrapper.cpp.obj.modmap -o CMakeFiles\\test_native_wrapper.dir\\test\\util\\test_native_wrapper.cpp.obj -c D:\\Project\\zketch-v15\\test\\util\\test_native_wrapper.cpp",
+  "file": "D:/Project/zketch-v15/test/util/test_native_wrapper.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_native_wrapper.dir/test/util/test_native_wrapper.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_event_dispatcher.dir\\test\\event\\test_event_dispatcher.cpp.obj.modmap -o CMakeFiles\\test_event_dispatcher.dir\\test\\event\\test_event_dispatcher.cpp.obj -c D:\\Project\\zketch-v15\\test\\event\\test_event_dispatcher.cpp",
+  "file": "D:/Project/zketch-v15/test/event/test_event_dispatcher.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_event_dispatcher.dir/test/event/test_event_dispatcher.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_event_dispatcher.dir\\src\\event\\event_dispatcher.cpp.obj.modmap -o CMakeFiles\\test_event_dispatcher.dir\\src\\event\\event_dispatcher.cpp.obj -c D:\\Project\\zketch-v15\\src\\event\\event_dispatcher.cpp",
+  "file": "D:/Project/zketch-v15/src/event/event_dispatcher.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_event_dispatcher.dir/src/event/event_dispatcher.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_event_dispatcher.dir\\src\\log\\logger.cpp.obj.modmap -o CMakeFiles\\test_event_dispatcher.dir\\src\\log\\logger.cpp.obj -c D:\\Project\\zketch-v15\\src\\log\\logger.cpp",
+  "file": "D:/Project/zketch-v15/src/log/logger.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_event_dispatcher.dir/src/log/logger.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_label.dir\\test\\ui\\test_label.cpp.obj.modmap -o CMakeFiles\\test_label.dir\\test\\ui\\test_label.cpp.obj -c D:\\Project\\zketch-v15\\test\\ui\\test_label.cpp",
+  "file": "D:/Project/zketch-v15/test/ui/test_label.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_label.dir/test/ui/test_label.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_label.dir\\src\\ui\\label.cpp.obj.modmap -o CMakeFiles\\test_label.dir\\src\\ui\\label.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\label.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/label.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_label.dir/src/ui/label.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_button.dir\\test\\ui\\test_button.cpp.obj.modmap -o CMakeFiles\\test_button.dir\\test\\ui\\test_button.cpp.obj -c D:\\Project\\zketch-v15\\test\\ui\\test_button.cpp",
+  "file": "D:/Project/zketch-v15/test/ui/test_button.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_button.dir/test/ui/test_button.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_button.dir\\src\\ui\\button.cpp.obj.modmap -o CMakeFiles\\test_button.dir\\src\\ui\\button.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\button.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/button.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_button.dir/src/ui/button.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_panel.dir\\test\\ui\\test_panel.cpp.obj.modmap -o CMakeFiles\\test_panel.dir\\test\\ui\\test_panel.cpp.obj -c D:\\Project\\zketch-v15\\test\\ui\\test_panel.cpp",
+  "file": "D:/Project/zketch-v15/test/ui/test_panel.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_panel.dir/test/ui/test_panel.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_panel.dir\\src\\ui\\panel.cpp.obj.modmap -o CMakeFiles\\test_panel.dir\\src\\ui\\panel.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\panel.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/panel.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_panel.dir/src/ui/panel.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_panel.dir\\src\\ui\\label.cpp.obj.modmap -o CMakeFiles\\test_panel.dir\\src\\ui\\label.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\label.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/label.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_panel.dir/src/ui/label.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_renderer.dir\\test\\render\\test_renderer.cpp.obj.modmap -o CMakeFiles\\test_renderer.dir\\test\\render\\test_renderer.cpp.obj -c D:\\Project\\zketch-v15\\test\\render\\test_renderer.cpp",
+  "file": "D:/Project/zketch-v15/test/render/test_renderer.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_renderer.dir/test/render/test_renderer.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_renderer.dir\\src\\render\\renderer.cpp.obj.modmap -o CMakeFiles\\test_renderer.dir\\src\\render\\renderer.cpp.obj -c D:\\Project\\zketch-v15\\src\\render\\renderer.cpp",
+  "file": "D:/Project/zketch-v15/src/render/renderer.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_renderer.dir/src/render/renderer.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_renderer.dir\\src\\log\\logger.cpp.obj.modmap -o CMakeFiles\\test_renderer.dir\\src\\log\\logger.cpp.obj -c D:\\Project\\zketch-v15\\src\\log\\logger.cpp",
+  "file": "D:/Project/zketch-v15/src/log/logger.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_renderer.dir/src/log/logger.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_window.dir\\test\\ui\\test_window.cpp.obj.modmap -o CMakeFiles\\test_window.dir\\test\\ui\\test_window.cpp.obj -c D:\\Project\\zketch-v15\\test\\ui\\test_window.cpp",
+  "file": "D:/Project/zketch-v15/test/ui/test_window.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_window.dir/test/ui/test_window.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_window.dir\\src\\ui\\window.cpp.obj.modmap -o CMakeFiles\\test_window.dir\\src\\ui\\window.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\window.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/window.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_window.dir/src/ui/window.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_window.dir\\src\\ui\\panel.cpp.obj.modmap -o CMakeFiles\\test_window.dir\\src\\ui\\panel.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\panel.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/panel.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_window.dir/src/ui/panel.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_window.dir\\src\\ui\\label.cpp.obj.modmap -o CMakeFiles\\test_window.dir\\src\\ui\\label.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\label.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/label.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_window.dir/src/ui/label.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_window.dir\\src\\ui\\button.cpp.obj.modmap -o CMakeFiles\\test_window.dir\\src\\ui\\button.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\button.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/button.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_window.dir/src/ui/button.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_window.dir\\src\\event\\event_dispatcher.cpp.obj.modmap -o CMakeFiles\\test_window.dir\\src\\event\\event_dispatcher.cpp.obj -c D:\\Project\\zketch-v15\\src\\event\\event_dispatcher.cpp",
+  "file": "D:/Project/zketch-v15/src/event/event_dispatcher.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_window.dir/src/event/event_dispatcher.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_window.dir\\src\\log\\logger.cpp.obj.modmap -o CMakeFiles\\test_window.dir\\src\\log\\logger.cpp.obj -c D:\\Project\\zketch-v15\\src\\log\\logger.cpp",
+  "file": "D:/Project/zketch-v15/src/log/logger.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_window.dir/src/log/logger.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_window.dir\\src\\render\\renderer.cpp.obj.modmap -o CMakeFiles\\test_window.dir\\src\\render\\renderer.cpp.obj -c D:\\Project\\zketch-v15\\src\\render\\renderer.cpp",
+  "file": "D:/Project/zketch-v15/src/render/renderer.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_window.dir/src/render/renderer.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_message_loop.dir\\test\\core\\test_message_loop.cpp.obj.modmap -o CMakeFiles\\test_message_loop.dir\\test\\core\\test_message_loop.cpp.obj -c D:\\Project\\zketch-v15\\test\\core\\test_message_loop.cpp",
+  "file": "D:/Project/zketch-v15/test/core/test_message_loop.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_message_loop.dir/test/core/test_message_loop.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_message_loop.dir\\src\\core\\main_thread_queue.cpp.obj.modmap -o CMakeFiles\\test_message_loop.dir\\src\\core\\main_thread_queue.cpp.obj -c D:\\Project\\zketch-v15\\src\\core\\main_thread_queue.cpp",
+  "file": "D:/Project/zketch-v15/src/core/main_thread_queue.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_message_loop.dir/src/core/main_thread_queue.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_message_loop.dir\\src\\core\\message_loop.cpp.obj.modmap -o CMakeFiles\\test_message_loop.dir\\src\\core\\message_loop.cpp.obj -c D:\\Project\\zketch-v15\\src\\core\\message_loop.cpp",
+  "file": "D:/Project/zketch-v15/src/core/message_loop.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_message_loop.dir/src/core/message_loop.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_message_loop.dir\\src\\log\\logger.cpp.obj.modmap -o CMakeFiles\\test_message_loop.dir\\src\\log\\logger.cpp.obj -c D:\\Project\\zketch-v15\\src\\log\\logger.cpp",
+  "file": "D:/Project/zketch-v15/src/log/logger.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_message_loop.dir/src/log/logger.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_main_thread_queue.dir\\test\\core\\test_main_thread_queue.cpp.obj.modmap -o CMakeFiles\\test_main_thread_queue.dir\\test\\core\\test_main_thread_queue.cpp.obj -c D:\\Project\\zketch-v15\\test\\core\\test_main_thread_queue.cpp",
+  "file": "D:/Project/zketch-v15/test/core/test_main_thread_queue.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_main_thread_queue.dir/test/core/test_main_thread_queue.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_main_thread_queue.dir\\src\\core\\main_thread_queue.cpp.obj.modmap -o CMakeFiles\\test_main_thread_queue.dir\\src\\core\\main_thread_queue.cpp.obj -c D:\\Project\\zketch-v15\\src\\core\\main_thread_queue.cpp",
+  "file": "D:/Project/zketch-v15/src/core/main_thread_queue.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_main_thread_queue.dir/src/core/main_thread_queue.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_main_thread_queue.dir\\src\\log\\logger.cpp.obj.modmap -o CMakeFiles\\test_main_thread_queue.dir\\src\\log\\logger.cpp.obj -c D:\\Project\\zketch-v15\\src\\log\\logger.cpp",
+  "file": "D:/Project/zketch-v15/src/log/logger.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_main_thread_queue.dir/src/log/logger.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_io.dir\\test\\io\\test_widget_io.cpp.obj.modmap -o CMakeFiles\\test_widget_io.dir\\test\\io\\test_widget_io.cpp.obj -c D:\\Project\\zketch-v15\\test\\io\\test_widget_io.cpp",
+  "file": "D:/Project/zketch-v15/test/io/test_widget_io.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_io.dir/test/io/test_widget_io.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_io.dir\\src\\io\\widget_serializer.cpp.obj.modmap -o CMakeFiles\\test_widget_io.dir\\src\\io\\widget_serializer.cpp.obj -c D:\\Project\\zketch-v15\\src\\io\\widget_serializer.cpp",
+  "file": "D:/Project/zketch-v15/src/io/widget_serializer.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_io.dir/src/io/widget_serializer.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_io.dir\\src\\io\\widget_parser.cpp.obj.modmap -o CMakeFiles\\test_widget_io.dir\\src\\io\\widget_parser.cpp.obj -c D:\\Project\\zketch-v15\\src\\io\\widget_parser.cpp",
+  "file": "D:/Project/zketch-v15/src/io/widget_parser.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_io.dir/src/io/widget_parser.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_io.dir\\src\\ui\\window.cpp.obj.modmap -o CMakeFiles\\test_widget_io.dir\\src\\ui\\window.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\window.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/window.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_io.dir/src/ui/window.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_io.dir\\src\\ui\\panel.cpp.obj.modmap -o CMakeFiles\\test_widget_io.dir\\src\\ui\\panel.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\panel.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/panel.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_io.dir/src/ui/panel.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_io.dir\\src\\ui\\label.cpp.obj.modmap -o CMakeFiles\\test_widget_io.dir\\src\\ui\\label.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\label.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/label.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_io.dir/src/ui/label.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_io.dir\\src\\ui\\button.cpp.obj.modmap -o CMakeFiles\\test_widget_io.dir\\src\\ui\\button.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\button.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/button.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_io.dir/src/ui/button.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_io.dir\\src\\event\\event_dispatcher.cpp.obj.modmap -o CMakeFiles\\test_widget_io.dir\\src\\event\\event_dispatcher.cpp.obj -c D:\\Project\\zketch-v15\\src\\event\\event_dispatcher.cpp",
+  "file": "D:/Project/zketch-v15/src/event/event_dispatcher.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_io.dir/src/event/event_dispatcher.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_io.dir\\src\\log\\logger.cpp.obj.modmap -o CMakeFiles\\test_widget_io.dir\\src\\log\\logger.cpp.obj -c D:\\Project\\zketch-v15\\src\\log\\logger.cpp",
+  "file": "D:/Project/zketch-v15/src/log/logger.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_io.dir/src/log/logger.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_io.dir\\src\\render\\renderer.cpp.obj.modmap -o CMakeFiles\\test_widget_io.dir\\src\\render\\renderer.cpp.obj -c D:\\Project\\zketch-v15\\src\\render\\renderer.cpp",
+  "file": "D:/Project/zketch-v15/src/render/renderer.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_io.dir/src/render/renderer.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_parser_errors.dir\\test\\io\\test_widget_parser_errors.cpp.obj.modmap -o CMakeFiles\\test_widget_parser_errors.dir\\test\\io\\test_widget_parser_errors.cpp.obj -c D:\\Project\\zketch-v15\\test\\io\\test_widget_parser_errors.cpp",
+  "file": "D:/Project/zketch-v15/test/io/test_widget_parser_errors.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_parser_errors.dir/test/io/test_widget_parser_errors.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_parser_errors.dir\\src\\io\\widget_parser.cpp.obj.modmap -o CMakeFiles\\test_widget_parser_errors.dir\\src\\io\\widget_parser.cpp.obj -c D:\\Project\\zketch-v15\\src\\io\\widget_parser.cpp",
+  "file": "D:/Project/zketch-v15/src/io/widget_parser.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_parser_errors.dir/src/io/widget_parser.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_parser_errors.dir\\src\\ui\\window.cpp.obj.modmap -o CMakeFiles\\test_widget_parser_errors.dir\\src\\ui\\window.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\window.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/window.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_parser_errors.dir/src/ui/window.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_parser_errors.dir\\src\\ui\\panel.cpp.obj.modmap -o CMakeFiles\\test_widget_parser_errors.dir\\src\\ui\\panel.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\panel.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/panel.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_parser_errors.dir/src/ui/panel.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_parser_errors.dir\\src\\ui\\label.cpp.obj.modmap -o CMakeFiles\\test_widget_parser_errors.dir\\src\\ui\\label.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\label.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/label.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_parser_errors.dir/src/ui/label.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_parser_errors.dir\\src\\ui\\button.cpp.obj.modmap -o CMakeFiles\\test_widget_parser_errors.dir\\src\\ui\\button.cpp.obj -c D:\\Project\\zketch-v15\\src\\ui\\button.cpp",
+  "file": "D:/Project/zketch-v15/src/ui/button.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_parser_errors.dir/src/ui/button.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_parser_errors.dir\\src\\event\\event_dispatcher.cpp.obj.modmap -o CMakeFiles\\test_widget_parser_errors.dir\\src\\event\\event_dispatcher.cpp.obj -c D:\\Project\\zketch-v15\\src\\event\\event_dispatcher.cpp",
+  "file": "D:/Project/zketch-v15/src/event/event_dispatcher.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_parser_errors.dir/src/event/event_dispatcher.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_parser_errors.dir\\src\\log\\logger.cpp.obj.modmap -o CMakeFiles\\test_widget_parser_errors.dir\\src\\log\\logger.cpp.obj -c D:\\Project\\zketch-v15\\src\\log\\logger.cpp",
+  "file": "D:/Project/zketch-v15/src/log/logger.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_parser_errors.dir/src/log/logger.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\test_widget_parser_errors.dir\\src\\render\\renderer.cpp.obj.modmap -o CMakeFiles\\test_widget_parser_errors.dir\\src\\render\\renderer.cpp.obj -c D:\\Project\\zketch-v15\\src\\render\\renderer.cpp",
+  "file": "D:/Project/zketch-v15/src/render/renderer.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/test_widget_parser_errors.dir/src/render/renderer.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\example_hello_window.dir\\example\\hello_window\\main.cpp.obj.modmap -o CMakeFiles\\example_hello_window.dir\\example\\hello_window\\main.cpp.obj -c D:\\Project\\zketch-v15\\example\\hello_window\\main.cpp",
+  "file": "D:/Project/zketch-v15/example/hello_window/main.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/example_hello_window.dir/example/hello_window/main.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions @CMakeFiles\\example_game_loop.dir\\example\\game_loop\\main.cpp.obj.modmap -o CMakeFiles\\example_game_loop.dir\\example\\game_loop\\main.cpp.obj -c D:\\Project\\zketch-v15\\example\\game_loop\\main.cpp",
+  "file": "D:/Project/zketch-v15/example/game_loop/main.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/example_game_loop.dir/example/game_loop/main.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\catch_chronometer.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\benchmark\\catch_chronometer.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/benchmark/catch_chronometer.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\detail\\catch_analyse.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\benchmark\\detail\\catch_analyse.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_analyse.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\detail\\catch_benchmark_function.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\benchmark\\detail\\catch_benchmark_function.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_benchmark_function.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_benchmark_function.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\detail\\catch_run_for_at_least.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\benchmark\\detail\\catch_run_for_at_least.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_run_for_at_least.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_run_for_at_least.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\benchmark\\detail\\catch_stats.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\benchmark\\detail\\catch_stats.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/benchmark/detail/catch_stats.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_stats.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\generators\\catch_generator_exception.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\generators\\catch_generator_exception.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/generators/catch_generator_exception.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generator_exception.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\generators\\catch_generators.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\generators\\catch_generators.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/generators/catch_generators.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\generators\\catch_generators_random.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\generators\\catch_generators_random.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/generators/catch_generators_random.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_automake.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_automake.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_automake.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_automake.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_common_base.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_common_base.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_common_base.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_common_base.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_compact.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_compact.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_compact.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_compact.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_console.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_console.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_console.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_console.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_cumulative_base.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_cumulative_base.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_cumulative_base.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_cumulative_base.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_event_listener.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_event_listener.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_event_listener.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_event_listener.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_helpers.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_helpers.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_helpers.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_json.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_json.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_json.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_junit.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_junit.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_junit.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_junit.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_multi.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_multi.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_multi.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_multi.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_registrars.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_registrars.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_registrars.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_registrars.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_sonarqube.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_sonarqube.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_sonarqube.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_sonarqube.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_streaming_base.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_streaming_base.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_streaming_base.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_streaming_base.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_tap.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_tap.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_tap.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_tap.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_teamcity.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_teamcity.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_teamcity.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_teamcity.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\reporters\\catch_reporter_xml.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\reporters\\catch_reporter_xml.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/reporters/catch_reporter_xml.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_xml.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_capture.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\interfaces\\catch_interfaces_capture.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_capture.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_capture.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_config.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\interfaces\\catch_interfaces_config.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_config.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_config.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_exception.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\interfaces\\catch_interfaces_exception.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_exception.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_exception.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_generatortracker.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\interfaces\\catch_interfaces_generatortracker.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_generatortracker.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_generatortracker.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_registry_hub.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\interfaces\\catch_interfaces_registry_hub.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_registry_hub.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_registry_hub.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_reporter.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\interfaces\\catch_interfaces_reporter.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_reporter.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_reporter_factory.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\interfaces\\catch_interfaces_reporter_factory.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_reporter_factory.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_factory.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\interfaces\\catch_interfaces_testcase.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\interfaces\\catch_interfaces_testcase.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/interfaces/catch_interfaces_testcase.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_testcase.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_approx.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_approx.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_approx.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_approx.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_assertion_result.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_assertion_result.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_assertion_result.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_assertion_result.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_config.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_config.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_config.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_config.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_get_random_seed.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_get_random_seed.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_get_random_seed.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_get_random_seed.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_message.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_message.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_message.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_message.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_registry_hub.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_registry_hub.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_registry_hub.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_session.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_session.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_session.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_session.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_tag_alias_autoregistrar.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_tag_alias_autoregistrar.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_tag_alias_autoregistrar.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_tag_alias_autoregistrar.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_test_case_info.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_test_case_info.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_test_case_info.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_test_case_info.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_test_spec.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_test_spec.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_test_spec.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_test_spec.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_timer.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_timer.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_timer.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_timer.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_tostring.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_tostring.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_tostring.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_tostring.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_totals.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_totals.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_totals.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_totals.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_translate_exception.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_translate_exception.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_translate_exception.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_translate_exception.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\catch_version.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\catch_version.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/catch_version.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_version.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_assertion_handler.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_assertion_handler.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_assertion_handler.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_assertion_handler.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_case_insensitive_comparisons.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_case_insensitive_comparisons.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_case_insensitive_comparisons.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_case_insensitive_comparisons.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_clara.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_clara.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_clara.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_clara.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_commandline.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_commandline.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_commandline.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_commandline.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_console_colour.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_console_colour.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_console_colour.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_console_colour.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_context.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_context.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_context.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_context.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_debug_console.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_debug_console.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_debug_console.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debug_console.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_debugger.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_debugger.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_debugger.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debugger.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_decomposer.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_decomposer.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_decomposer.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_decomposer.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_enforce.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_enforce.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_enforce.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enforce.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_enum_values_registry.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_enum_values_registry.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_enum_values_registry.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enum_values_registry.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_errno_guard.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_errno_guard.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_errno_guard.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_errno_guard.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_exception_translator_registry.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_exception_translator_registry.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_exception_translator_registry.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_exception_translator_registry.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_fatal_condition_handler.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_fatal_condition_handler.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_fatal_condition_handler.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_fatal_condition_handler.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_floating_point_helpers.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_floating_point_helpers.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_floating_point_helpers.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_floating_point_helpers.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_getenv.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_getenv.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_getenv.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_getenv.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_istream.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_istream.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_istream.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_jsonwriter.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_jsonwriter.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_jsonwriter.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_lazy_expr.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_lazy_expr.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_lazy_expr.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_lazy_expr.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_leak_detector.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_leak_detector.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_leak_detector.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_leak_detector.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_list.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_list.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_list.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_list.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_message_info.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_message_info.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_message_info.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_message_info.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_output_redirect.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_output_redirect.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_output_redirect.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_output_redirect.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_parse_numbers.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_parse_numbers.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_parse_numbers.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_parse_numbers.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_polyfills.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_polyfills.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_polyfills.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_polyfills.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_random_number_generator.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_random_number_generator.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_random_number_generator.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_number_generator.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_random_seed_generation.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_random_seed_generation.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_random_seed_generation.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_seed_generation.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_reporter_registry.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_reporter_registry.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_reporter_registry.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_registry.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_reporter_spec_parser.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_reporter_spec_parser.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_reporter_spec_parser.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_spec_parser.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_reusable_string_stream.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_reusable_string_stream.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_reusable_string_stream.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reusable_string_stream.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_run_context.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_run_context.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_run_context.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_run_context.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_section.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_section.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_section.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_section.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_singletons.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_singletons.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_singletons.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_singletons.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_source_line_info.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_source_line_info.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_source_line_info.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_source_line_info.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_startup_exception_registry.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_startup_exception_registry.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_startup_exception_registry.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_startup_exception_registry.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_stdstreams.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_stdstreams.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_stdstreams.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stdstreams.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_string_manip.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_string_manip.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_string_manip.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_string_manip.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_stringref.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_stringref.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_stringref.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stringref.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_tag_alias_registry.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_tag_alias_registry.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_tag_alias_registry.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_tag_alias_registry.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_case_info_hasher.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_test_case_info_hasher.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_test_case_info_hasher.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_info_hasher.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_case_registry_impl.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_test_case_registry_impl.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_test_case_registry_impl.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_registry_impl.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_case_tracker.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_test_case_tracker.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_test_case_tracker.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_tracker.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_failure_exception.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_test_failure_exception.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_test_failure_exception.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_failure_exception.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_registry.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_test_registry.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_test_registry.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_registry.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_test_spec_parser.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_test_spec_parser.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_test_spec_parser.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_spec_parser.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_textflow.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_textflow.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_textflow.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_textflow.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_uncaught_exceptions.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_uncaught_exceptions.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_uncaught_exceptions.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_uncaught_exceptions.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_wildcard_pattern.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_wildcard_pattern.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_wildcard_pattern.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_wildcard_pattern.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\internal\\catch_xmlwriter.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_xmlwriter.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_xmlwriter.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_xmlwriter.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\matchers\\catch_matchers.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/matchers/catch_matchers.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_container_properties.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\matchers\\catch_matchers_container_properties.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_container_properties.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_container_properties.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_exception.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\matchers\\catch_matchers_exception.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_exception.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_exception.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_floating_point.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\matchers\\catch_matchers_floating_point.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_floating_point.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_floating_point.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_predicate.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\matchers\\catch_matchers_predicate.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_predicate.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_predicate.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_quantifiers.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\matchers\\catch_matchers_quantifiers.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_quantifiers.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_quantifiers.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_string.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\matchers\\catch_matchers_string.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_string.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_string.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\catch_matchers_templated.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\matchers\\catch_matchers_templated.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/matchers/catch_matchers_templated.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_templated.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2.dir\\catch2\\matchers\\internal\\catch_matchers_impl.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\matchers\\internal\\catch_matchers_impl.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/matchers/internal/catch_matchers_impl.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/internal/catch_matchers_impl.cpp.obj"
+},
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -ID:/Project/zketch-v15/include -ID:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/.. -ID:/Project/zketch-v15/build/_deps/catch2-build/generated-includes -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -fexceptions -ffile-prefix-map=D:/Project/zketch-v15/build/_deps/catch2-src/= -o _deps\\catch2-build\\src\\CMakeFiles\\Catch2WithMain.dir\\catch2\\internal\\catch_main.cpp.obj -c D:\\Project\\zketch-v15\\build\\_deps\\catch2-src\\src\\catch2\\internal\\catch_main.cpp",
+  "file": "D:/Project/zketch-v15/build/_deps/catch2-src/src/catch2/internal/catch_main.cpp",
+  "output": "D:/Project/zketch-v15/build/_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.obj"
 }
 ]
