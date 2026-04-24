@@ -30,13 +30,18 @@ flowchart TD
     I["core (top)"]
 
     A --> B
-    B --> C
-    C --> D
+    A --> C
+    A --> D
+    B --> D
+    C --> E
     D --> E
     E --> F
+    B --> G
     F --> G
+    F --> H
     G --> H
     H --> I
+    B --> I
 ```
 
 Each layer maps to a namespace and a folder:
@@ -52,6 +57,8 @@ Each layer maps to a namespace and a folder:
 | Rendering | `zk::render` | `include/zk/render/` |
 | Serialization / deserialization | `zk::io` | `include/zk/io/` |
 | Application and message loop | `zk::core` | `include/zk/core/` |
+
+No cyclic dependencies are permitted. Dependency order (low → high): `meta/util` → `error` / `log` → `metric` → `event` → `ui` → `render` → `io` → `core`.
 
 ---
 
@@ -93,7 +100,7 @@ Structured logging with compile-time elimination.
 
 Type-safe 2D coordinate and dimension types.
 
-- `basic_pair<Derived>` — CRTP base class. Provides all arithmetic operators (`+`, `-`, `*`, `/`, `+=`, `-=`, `*=`, `/=`) via a single `apply()` method. Holds the `MAX` constant as the single source of truth for the upper bound.
+- `basic_pair<Derived>` — CRTP base class. Provides all arithmetic operators (`+`, `-`, `*`, `/`, `+=`, `-=`, `*=`, `/=`) via a single `apply()` method. Holds the `MAX` constant (`65535`, i.e. `~uint16_t{0}`) as the single source of truth for the upper bound. Constrained by the `is_pair_unit` guard to only accept `Pos<T>` and `Size<T>` as `Derived`.
 - `Pos<T>` — 2D position `{x, y}`. Range: `[-MAX, MAX]`. Supports negative values for relative coordinates.
 - `Size<T>` — 2D dimensions `{w, h}`. Range: `[0, MAX]`. Never negative.
 - `Rect<T>` — flat rectangle `{x, y, w, h}` with `contains()`, `right()`, and `bottom()` helpers.
@@ -105,16 +112,16 @@ Callback-based event dispatch.
 
 - `EventType` enum: `Click`, `Resize`, `Close`, `KeyDown`, `KeyUp`, `MouseEnter`, `MouseLeave`.
 - Payload structs: `ClickPayload`, `ResizePayload`, `KeyPayload`, `ClosePayload`, `MouseEnterPayload`, `MouseLeavePayload`.
-- `EventDispatcher` — stores handlers in a `std::array` indexed by `EventType` for O(1) lookup with no per-dispatch allocation. Supports multiple subscribers per event type. Returns a `HandlerId` for selective unsubscribe. Exceptions thrown by handlers are caught, logged, and swallowed — the application does not crash.
+- `EventDispatcher` — stores handlers in a `std::array` indexed by `EventType` for O(1) lookup with no per-dispatch allocation. Supports multiple subscribers per event type. Returns a `HandlerId` for selective unsubscribe. Exceptions thrown by handlers are caught, logged, and swallowed — the application does not crash. Uses `std::any` to store type-erased `std::function<void(const Payload&)>` handlers. Non-copyable, movable.
 - All dispatch operations must run on the Main Thread. A thread-id assertion fires in debug builds if this contract is violated.
 
 ### zk::ui
 
 The widget layer.
 
-- `WidgetBase` — abstract base with `pos_`, `size_`, `visible_`, and `dirty_` fields. Declares the `render(Renderer&)` interface.
-- `Window` — top-level Win32 window. Owns the `HWND` (via `HwndWrapper`), the `Renderer`, and a list of `Panel` children. The static `WndProc` translates Win32 messages (`WM_SIZE`, `WM_DESTROY`, `WM_KEYDOWN`, `WM_KEYUP`, `WM_MOUSEMOVE`, `WM_LBUTTONDOWN`, `WM_LBUTTONUP`) into `EventDispatcher` calls. Default size is 800x600 if not specified.
-- `Panel` — container widget. Owns child widgets via `std::unique_ptr`. Maintains an `abs_pos_` (absolute screen coordinate) derived from its parent's absolute position plus its own relative position. Moving a Panel recursively updates all children's absolute positions.
+- `WidgetBase` — abstract base with `pos_`, `size_`, `visible_`, and `dirty_` fields. Declares the `render(Renderer&)` interface. Visibility is queried via `is_visible()`.
+- `Window` — top-level Win32 window. Owns the `HWND` (via `HwndWrapper`), the `Renderer`, and a list of `Panel` children. The static `WndProc` translates Win32 messages (`WM_SIZE`, `WM_DESTROY`, `WM_KEYDOWN`, `WM_KEYUP`, `WM_MOUSEMOVE`, `WM_LBUTTONDOWN`, `WM_LBUTTONUP`) into `EventDispatcher` calls. Default size is 800×600 if not specified. The raw HWND is accessible via `native_handle()` for advanced Win32 usage.
+- `Panel` — container widget. Owns child widgets via `std::unique_ptr`. Maintains an `abs_pos_` (absolute screen coordinate) derived from its parent's absolute position plus its own relative position. Moving a Panel recursively updates all children's absolute positions. Stores original relative positions in a parallel `child_rel_positions_` vector for round-trip-stable serialization.
 - `Label` — static text widget. Configurable text, `FontConfig`, and `Color`. Marks itself dirty on any property change.
 - `Button` — interactive widget with a state machine: `Normal`, `Hovered`, `Disabled`. Calls the registered click handler only when not `Disabled`. Missing handler is a no-op.
 
@@ -125,9 +132,10 @@ Direct2D rendering backend.
 - `Renderer` — wraps `ID2D1Factory`, `ID2D1HwndRenderTarget`, and `IDWriteFactory` via `Microsoft::WRL::ComPtr`.
 - Factory method `Renderer::create(HWND)` initializes all COM objects and returns `std::expected<Renderer, Error>`.
 - Frame lifecycle: `begin_frame()` calls `BeginDraw`, draw calls follow, `end_frame()` calls `EndDraw`.
-- If `EndDraw` returns `D2DERR_RECREATE_TARGET` (device loss), the render target is recreated automatically and `needs_redraw()` is set so the caller can schedule an immediate repaint.
+- If `EndDraw` returns `D2DERR_RECREATE_TARGET` (device loss), the render target is recreated automatically and `needs_redraw()` is set so the caller can schedule an immediate repaint. The flag is cleared by calling `clear_redraw_flag()`.
 - Draw primitives: `clear(Color)`, `draw_rect(Pos, Size, Color)`, `draw_text(string_view, Pos, Size, FontConfig, Color)`.
 - Text is clipped to the widget's bounding `Size`.
+- `is_valid()` returns true when the render target is ready to accept draw calls.
 
 ### zk::io
 
@@ -195,12 +203,25 @@ No exceptions are used as control flow. Every fallible public API returns `std::
 
 | Target | Type | Description |
 |---|---|---|
-| `zketch_core` | Interface library | Header-only metric and util layers |
-| `zketch_core_impl` | Static library | Application, MessageLoop, Logger |
+| `zketch_core` | Interface library | Header-only metric, util, error, and log layers |
+| `zketch_core_impl` | Static library | Application, MessageLoop, MainThreadQueue, Logger |
 | `zketch_ui` | Static library | Window, Panel, Label, Button, EventDispatcher |
-| `zketch_render` | Static library | Renderer (Direct2D backend) |
+| `zketch_render` | Static library | Renderer (Direct2D + DirectWrite backend) |
 | `zketch_io` | Static library | WidgetSerializer, WidgetParser |
 | `zketch` | Executable | Main application entry point |
 | `example_hello_window` | Executable | Blocking mode example |
 | `example_game_loop` | Executable | NonBlocking mode example |
-| `test_*` | Executables | 16 test binaries (one per module) |
+| `test_error` | Executable | Error handling tests |
+| `test_logger` | Executable | Logger tests |
+| `test_pos` | Executable | Pos\<T\> tests |
+| `test_size` | Executable | Size\<T\> tests |
+| `test_arithmetic_clamp` | Executable | Arithmetic and clamp tests |
+| `test_native_wrapper` | Executable | NativeWrapper tests |
+| `test_event_dispatcher` | Executable | EventDispatcher tests |
+| `test_label` | Executable | Label widget tests |
+| `test_button` | Executable | Button widget tests |
+| `test_panel` | Executable | Panel widget tests |
+| `test_renderer` | Executable | Renderer tests |
+| `test_window` | Executable | Window widget tests |
+| `test_widget_io` | Executable | Widget serialization round-trip tests |
+| `test_widget_parser_errors` | Executable | Parser error handling tests |

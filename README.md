@@ -30,13 +30,15 @@ A C++23 GUI framework built from scratch for Windows, designed with a hybrid arc
 
 int main()
 {
-    auto app = zk::core::Application::create("MyApp", zk::core::PumpMode::Blocking);
-    if (!app) return 1;
+    auto app_result = zk::core::Application::create("MyApp", zk::core::PumpMode::Blocking);
+    if (!app_result) return 1;
+    auto& app = *app_result;
 
-    auto win = zk::ui::Window::create("Hello, zketch!",
-                                      zk::metric::Pos<int>{ 100, 100 },
-                                      zk::metric::Size<uint16_t>{ 800, 600 });
-    if (!win) return 1;
+    auto win_result = zk::ui::Window::create("Hello, zketch!",
+                                             zk::metric::Pos<int>{ 100, 100 },
+                                             zk::metric::Size<uint16_t>{ 800, 600 });
+    if (!win_result) return 1;
+    auto& win = *win_result;
 
     auto panel = std::make_unique<zk::ui::Panel>(
         zk::metric::Pos<int>{ 0, 0 },
@@ -48,15 +50,15 @@ int main()
         zk::metric::Size<uint16_t>{ 400, 40 });
 
     panel->add_child(std::move(label));
-    win->add_panel(std::move(panel));
+    win.add_panel(std::move(panel));
 
-    win->on_key_down([](uint32_t vkey) {
+    win.on_key_down([](uint32_t vkey) {
         if (vkey == VK_ESCAPE) PostQuitMessage(0);
     });
 
-    win->show();
-    app->run();
-    return 0;
+    win.show();
+    auto result = app.run();
+    return result.value_or(1);
 }
 ```
 

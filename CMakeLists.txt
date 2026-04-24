@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 4.3)
 project(
 	zketch
-	VERSION 0.1
+	VERSION 1.0
 	LANGUAGES CXX
 )
 

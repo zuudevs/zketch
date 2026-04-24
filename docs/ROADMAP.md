@@ -2,9 +2,11 @@
 
 This document outlines the planned direction for zketch beyond the v1.0 MVP. Items are grouped by theme and roughly ordered by priority, but nothing here is a firm commitment or timeline.
 
+> **Status:** v1.0.0 was released on 2026-04-24. All items below target future versions.
+
 ---
 
-## v0.2 — Widget and Rendering Improvements
+## v1.1 — Widget and Rendering Improvements
 
 These are natural extensions of the v1.0 foundation that do not require architectural changes.
 
@@ -19,7 +21,7 @@ These are natural extensions of the v1.0 foundation that do not require architec
 
 ---
 
-## v0.3 — Input and Interaction
+## v1.2 — Input and Interaction
 
 - **Mouse position tracking** — expose cursor position to widgets for hover detection without requiring WndProc changes per widget.
 - **Drag and drop** — basic drag-and-drop support between widgets using Win32 OLE drag-and-drop.
@@ -29,7 +31,7 @@ These are natural extensions of the v1.0 foundation that do not require architec
 
 ---
 
-## v0.4 — Serialization and Tooling
+## v1.3 — Serialization and Tooling
 
 - **Hot reload** — watch the widget config file for changes and reload the widget hierarchy at runtime without restarting the application.
 - **Widget config format v2** — extend the format to support theming, layout hints, and event bindings.
@@ -38,7 +40,7 @@ These are natural extensions of the v1.0 foundation that do not require architec
 
 ---
 
-## v0.5 — Performance and Diagnostics
+## v1.4 — Performance and Diagnostics
 
 - **Dirty region rendering** — only redraw widgets that have changed, rather than clearing and redrawing the entire frame.
 - **Frame profiler** — built-in frame timing overlay showing CPU time per widget render call.
@@ -62,11 +64,13 @@ These items require significant design work or have dependencies that are not ye
 
 ---
 
-## Out of Scope (Permanently)
+## Constraints (v1.0 — Shipped)
 
-- Multiple rendering backends in v1.0 (Direct2D is the only backend).
-- Cross-platform support in v1.0.
-- Multi-threaded UI operations in v1.0.
+These were explicitly out of scope for v1.0 and remain deferred until a future version:
+
+- Multiple rendering backends — Direct2D is the only backend.
+- Cross-platform support — Windows only.
+- Multi-threaded UI operations — all UI runs on the main thread.
 - Web or mobile targets.
 
 ---

@@ -1,6 +1,6 @@
 # API Reference
 
-This document covers the full public API of zketch v0.1. All headers are under `include/zk/`.
+This document covers the full public API of zketch v1.0. All headers are under `include/zk/`.
 
 ---
 
@@ -40,36 +40,49 @@ class Application {
 public:
     // Factory — the only way to construct a valid Application.
     // Registers a Win32 WNDCLASSEX with the given class_name.
+    // Returns an error if registration fails.
     [[nodiscard]] static std::expected<Application, error::Error> create(
         std::string_view class_name,
         PumpMode         mode = PumpMode::Blocking) noexcept;
 
     // Registers a callback invoked once per frame in NonBlocking mode.
     // Has no effect in Blocking mode.
-    void set_frame_callback(std::function<void()> cb);
+    void set_frame_callback(std::function<void()> cb) noexcept;
 
     // Registers a callback invoked when the message loop encounters an error.
-    void set_error_handler(std::function<void(const error::Error&)> handler);
+    void set_error_handler(std::function<void(const error::Error&)> handler) noexcept;
 
     // Starts the message loop. Blocks until WM_QUIT is received.
     // Returns the WM_QUIT exit code, or an error on failure.
     [[nodiscard]] std::expected<int, error::Error> run() noexcept;
+
+    // Queries
+    [[nodiscard]] PumpMode           mode()       const noexcept;
+    [[nodiscard]] const std::string& class_name() const noexcept;
 };
 ```
 
+All operations must be called from the Main Thread. In debug builds a thread-id assertion fires if this contract is violated.
+
 ### MainThreadQueue
 
-Thread-safe queue for posting work to the main thread.
+Thread-safe singleton queue for posting work to the main thread.
 
 ```cpp
 class MainThreadQueue {
 public:
-    // Post a callable from any thread. It will be executed on the main thread
-    // during the next flush() call.
-    void post(std::function<void()> task);
+    // Returns the process-wide singleton instance.
+    [[nodiscard]] static MainThreadQueue& instance() noexcept;
 
-    // Execute all pending tasks. Must be called from the main thread.
-    void flush();
+    // Post a callable from any thread. It will be executed on the main thread
+    // during the next flush() call. Safe to call from any thread.
+    void post(std::function<void()> fn);
+
+    // Execute all pending callables in FIFO order.
+    // Must be called from the Main Thread only.
+    // The queue is drained atomically before any callable is invoked,
+    // so items posted during flush are deferred to the next cycle.
+    void flush() noexcept;
 };
 ```
 
@@ -83,45 +96,68 @@ Header: `zk/ui/window.hpp`, `zk/ui/panel.hpp`, `zk/ui/label.hpp`, `zk/ui/button.
 
 ```cpp
 struct Color {
-    uint8_t r, g, b, a;
-};
+    uint8_t r{0};
+    uint8_t g{0};
+    uint8_t b{0};
+    uint8_t a{255};
 
-// Predefined constants (in zk::ui::colors namespace or similar)
-// White, Black, Red, Green, Blue, Transparent
+    constexpr bool operator==(const Color&) const noexcept = default;
+};
+```
+
+Predefined constants in `zk::ui::colors`:
+
+```cpp
+namespace zk::ui::colors {
+    inline constexpr Color Black       { 0,   0,   0,   255 };
+    inline constexpr Color White       { 255, 255, 255, 255 };
+    inline constexpr Color Red         { 255, 0,   0,   255 };
+    inline constexpr Color Green       { 0,   255, 0,   255 };
+    inline constexpr Color Blue        { 0,   0,   255, 255 };
+    inline constexpr Color Yellow      { 255, 255, 0,   255 };
+    inline constexpr Color Cyan        { 0,   255, 255, 255 };
+    inline constexpr Color Magenta     { 255, 0,   255, 255 };
+    inline constexpr Color Transparent { 0,   0,   0,   0   };
+    inline constexpr Color Gray        { 128, 128, 128, 255 };
+    inline constexpr Color LightGray   { 211, 211, 211, 255 };
+    inline constexpr Color DarkGray    { 64,  64,  64,  255 };
+}
 ```
 
 ### FontConfig
 
 ```cpp
 struct FontConfig {
-    std::string family;   // e.g., "Segoe UI"
-    float       size_pt;  // point size
-    bool        bold;
-    bool        italic;
+    std::string family  = "Segoe UI";  // Font family name (UTF-8)
+    float       size_pt = 12.0f;       // Font size in points
+    bool        bold    = false;
+    bool        italic  = false;
+
+    constexpr bool operator==(const FontConfig&) const noexcept = default;
 };
 ```
 
 ### WidgetBase
 
-Abstract base class for all widgets.
+Abstract base class for all widgets. Non-copyable; movable.
 
 ```cpp
 class WidgetBase {
 public:
     // Position (relative to parent)
-    [[nodiscard]] metric::Pos<int>        pos()  const noexcept;
-    [[nodiscard]] metric::Size<uint16_t>  size() const noexcept;
+    [[nodiscard]] metric::Pos<int>       pos()  const noexcept;
+    [[nodiscard]] metric::Size<uint16_t> size() const noexcept;
 
-    void set_pos(metric::Pos<int> pos) noexcept;
-    void set_size(metric::Size<uint16_t> size) noexcept;
+    void set_pos(metric::Pos<int> pos) noexcept;        // marks dirty
+    void set_size(metric::Size<uint16_t> size) noexcept; // marks dirty
 
     // Visibility
-    [[nodiscard]] bool visible() const noexcept;
-    void set_visible(bool visible) noexcept;
+    [[nodiscard]] bool is_visible() const noexcept;
+    void set_visible(bool visible) noexcept;  // marks dirty
 
     // Dirty flag — set when the widget needs to be redrawn
     [[nodiscard]] bool is_dirty() const noexcept;
-    void mark_dirty() noexcept;
+    void mark_dirty()  noexcept;
     void clear_dirty() noexcept;
 
     // Render interface — implemented by each concrete widget
@@ -154,13 +190,14 @@ public:
         metric::Size<uint16_t> size) noexcept;
 
     // Visibility
-    void show()     noexcept;
-    void hide()     noexcept;
-    void minimize() noexcept;
-    void maximize() noexcept;
+    void show()     noexcept;  // SW_SHOW; initialises renderer on first call
+    void hide()     noexcept;  // SW_HIDE
+    void minimize() noexcept;  // SW_MINIMIZE
+    void maximize() noexcept;  // SW_MAXIMIZE
 
-    // Child management — transfers ownership into the Window
-    void add_panel(std::unique_ptr<Panel> panel);
+    // Child management — transfers ownership into the Window.
+    // Returns a non-owning reference to the added panel.
+    Panel& add_panel(std::unique_ptr<Panel> panel);
 
     // Event registration
     void on_resize  (std::function<void(metric::Size<uint16_t>)> handler);
@@ -169,10 +206,20 @@ public:
     void on_key_up  (std::function<void(uint32_t vkey)> handler);
 
     // Accessors
-    [[nodiscard]] std::string_view         title() const noexcept;
-    [[nodiscard]] metric::Pos<int>         pos()   const noexcept;
-    [[nodiscard]] metric::Size<uint16_t>   size()  const noexcept;
-    [[nodiscard]] HWND                     hwnd()  const noexcept;
+    [[nodiscard]] const std::string&       title()         const noexcept;
+    [[nodiscard]] metric::Pos<int>         pos()           const noexcept;
+    [[nodiscard]] metric::Size<uint16_t>   size()          const noexcept;
+    [[nodiscard]] bool                     is_valid()      const noexcept;
+
+    // Returns the underlying HWND for advanced Win32 usage.
+    // WARNING: Manipulating the HWND directly can violate framework invariants.
+    [[nodiscard]] HWND native_handle() const noexcept;
+
+    // Returns a pointer to the renderer, or nullptr if not yet initialised.
+    [[nodiscard]] render::Renderer* renderer() noexcept;
+
+    // Read-only view of top-level panels (used by WidgetSerializer).
+    [[nodiscard]] const std::vector<std::unique_ptr<Panel>>& panels() const noexcept;
 };
 ```
 
@@ -189,15 +236,25 @@ public:
     // Absolute screen position (derived from parent + relative pos)
     [[nodiscard]] metric::Pos<int> abs_pos() const noexcept;
 
-    // Sets relative position and recursively updates all children's abs_pos
+    // Sets relative position and recursively updates all children's abs_pos.
     void set_pos(metric::Pos<int> new_pos) noexcept;
 
-    // Called by a parent Panel to propagate a new absolute origin
+    // Called by a parent Panel to propagate a new absolute origin.
     void set_abs_origin(metric::Pos<int> parent_abs_pos) noexcept;
 
-    // Child management
+    // Child management — transfers unique ownership into the Panel.
     void add_child(std::unique_ptr<WidgetBase> child);
-    std::unique_ptr<WidgetBase> remove_child(WidgetBase* child);
+
+    // Releases ownership of child back to the caller.
+    // Returns nullptr if child is not found.
+    [[nodiscard]] std::unique_ptr<WidgetBase> remove_child(WidgetBase* child);
+
+    // Read-only view of children.
+    [[nodiscard]] const std::vector<std::unique_ptr<WidgetBase>>& children() const noexcept;
+
+    // Returns the original relative position of the child at index.
+    // Used by WidgetSerializer for round-trip-stable output.
+    [[nodiscard]] metric::Pos<int> child_rel_pos(std::size_t index) const noexcept;
 
     // Render
     void render(render::Renderer& renderer) override;
@@ -217,15 +274,15 @@ public:
 
     // Text
     [[nodiscard]] const std::string& text()  const noexcept;
-    void set_text(std::string_view text);
+    void set_text(std::string_view text);   // marks dirty
 
     // Font
     [[nodiscard]] const FontConfig& font() const noexcept;
-    void set_font(const FontConfig& font);
+    void set_font(const FontConfig& font); // marks dirty
 
     // Color
     [[nodiscard]] Color color() const noexcept;
-    void set_color(Color color);
+    void set_color(Color color);           // marks dirty
 
     // Render
     void render(render::Renderer& renderer) override;
@@ -252,8 +309,8 @@ public:
     // Label text
     [[nodiscard]] const std::string& label() const noexcept;
 
-    // Click handler — called when clicked and state != Disabled
-    // Passing an empty function clears the handler
+    // Click handler — called when clicked and state != Disabled.
+    // Passing an empty function clears the handler.
     void set_on_click(std::function<void()> handler);
 
     // Enable / disable
@@ -311,16 +368,18 @@ public:
 
     void draw_rect(metric::Pos<int>        pos,
                    metric::Size<uint16_t>  size,
-                   ui::Color              color) noexcept;
+                   ui::Color               color) noexcept;
 
     void draw_text(std::string_view        text,
                    metric::Pos<int>        pos,
-                   metric::Size<uint16_t>  size,
+                   metric::Size<uint16_t>  clip_size,
                    const ui::FontConfig&   font,
-                   ui::Color              color) noexcept;
+                   ui::Color               color) noexcept;
 
-    // Returns true if the render target was recreated and a repaint is needed
-    [[nodiscard]] bool needs_redraw() const noexcept;
+    // State queries
+    [[nodiscard]] bool is_valid()      const noexcept;  // true if render target is ready
+    [[nodiscard]] bool needs_redraw()  const noexcept;  // true after target recreation
+    void clear_redraw_flag() noexcept;
 };
 ```
 
@@ -341,6 +400,7 @@ enum class EventType : uint32_t {
     KeyUp,
     MouseEnter,
     MouseLeave,
+    _Count  // sentinel — do not use directly
 };
 
 struct ClickPayload      {};
@@ -359,6 +419,8 @@ struct KeyPayload {
 
 ### EventDispatcher
 
+Non-copyable, movable.
+
 ```cpp
 using HandlerId = uint32_t;  // zero is invalid
 
@@ -368,6 +430,7 @@ public:
 
     // Subscribe a handler for the given event type.
     // Returns a HandlerId for later unsubscription.
+    // Handlers are invoked in subscription order.
     // Must be called from the Main Thread.
     template <typename Payload>
     [[nodiscard]] HandlerId subscribe(
@@ -375,14 +438,18 @@ public:
         std::function<void(const Payload&)> handler);
 
     // Remove the handler identified by id from the given event type.
+    // No-op if id is not found.
     // Must be called from the Main Thread.
-    void unsubscribe(EventType type, HandlerId id);
+    void unsubscribe(EventType type, HandlerId id) noexcept;
 
     // Dispatch an event to all registered handlers for the given type.
     // Exceptions thrown by handlers are caught, logged, and swallowed.
     // Must be called from the Main Thread.
     template <typename Payload>
-    void dispatch(EventType type, Payload payload);
+    void dispatch(EventType type, const Payload& payload) noexcept;
+
+    // Returns the number of handlers registered for type.
+    [[nodiscard]] std::size_t handler_count(EventType type) const noexcept;
 };
 ```
 
@@ -409,7 +476,7 @@ Header: `zk/metric/pos.hpp`, `zk/metric/size.hpp`, `zk/metric/rect.hpp`, `zk/met
 
 ### Pos\<T\>
 
-2D position. Values are clamped to `[-MAX, MAX]` on construction and after arithmetic.
+2D position. Values are clamped to `[-MAX, MAX]` on construction and after arithmetic. Supports CTAD.
 
 ```cpp
 template <meta::Arithmetic T>
@@ -418,18 +485,22 @@ public:
     T x{};
     T y{};
 
+    static constexpr T MIN = -static_cast<T>(basic_pair<Pos<T>>::MAX);
+
     constexpr Pos() noexcept = default;
-    constexpr Pos(T val) noexcept;           // x = y = clamp(val)
+    constexpr Pos(T val) noexcept;           // x = y = clamp(val, MIN, MAX)
     constexpr Pos(T xval, T yval) noexcept;  // x = clamp(xval), y = clamp(yval)
 
     // Arithmetic operators: +, -, *, /, +=, -=, *=, /= (all clamped)
     // Comparison: operator<=> (strong ordering)
 };
+
+// CTAD: Pos{1, 2} → Pos<int>; Pos{1.0f, 2.0f} → Pos<float>
 ```
 
 ### Size\<T\>
 
-2D dimensions. Values are clamped to `[0, MAX]` on construction and after arithmetic.
+2D dimensions. Values are clamped to `[0, MAX]` on construction and after arithmetic. Supports CTAD.
 
 ```cpp
 template <meta::Arithmetic T>
@@ -438,13 +509,17 @@ public:
     T w{};
     T h{};
 
+    static constexpr T MIN = T{0};
+
     constexpr Size() noexcept = default;
-    constexpr Size(T val) noexcept;           // w = h = clamp(val)
+    constexpr Size(T val) noexcept;           // w = h = clamp(val, 0, MAX)
     constexpr Size(T wval, T hval) noexcept;  // w = clamp(wval), h = clamp(hval)
 
     // Arithmetic operators: +, -, *, /, +=, -=, *=, /= (all clamped)
     // Comparison: operator<=> (strong ordering)
 };
+
+// CTAD: Size{800, 600} → Size<int>; Size{1.0f} → Size<float>
 ```
 
 ### Rect\<T\>
@@ -455,6 +530,8 @@ Flat rectangle.
 template <meta::Arithmetic T>
 struct Rect {
     T x{}, y{}, w{}, h{};
+
+    constexpr Rect(T xval, T yval, T wval, T hval) noexcept;
 
     [[nodiscard]] constexpr bool contains(T px, T py) const noexcept;
     [[nodiscard]] constexpr T    right()              const noexcept;  // x + w
@@ -470,9 +547,9 @@ CRTP base providing arithmetic operators for `Pos` and `Size`.
 template <typename Derived>
 class basic_pair {
 public:
-    static constexpr auto MAX = /* implementation-defined upper bound */;
+    static constexpr uint16_t MAX = 65535;  // ~uint16_t{0}
 
-    // All operators (+, -, *, /, +=, -=, *=, /=) are provided.
+    // All operators (+, -, *, /, +=, -=, *=, /=) for same-type and scalar operands.
     // Results are clamped to [Derived::MIN, MAX].
 };
 ```
@@ -487,15 +564,22 @@ Header: `zk/error/error.hpp`
 
 ```cpp
 enum class ErrorCode : uint32_t {
+    // Initialization
     InitFailed,
     WindowClassRegistrationFailed,
+    // Window
     WindowCreationFailed,
     WindowInvalidState,
+    // Rendering
     RenderTargetCreationFailed,
     RenderTargetLost,
+    // Event
     EventHandlerException,
+    // Parsing
     ParseError,
+    // Thread safety
     WrongThread,
+    // Generic
     Unknown,
 };
 ```
@@ -508,15 +592,15 @@ struct Error {
     std::string message;
     uint32_t    native_error = 0;  // GetLastError() or HRESULT
 
-    // Returns true for unrecoverable errors
+    // Returns true for unrecoverable errors:
+    // InitFailed, WindowClassRegistrationFailed, WindowCreationFailed,
+    // RenderTargetCreationFailed, WrongThread
     bool is_fatal() const noexcept;
 
     // Returns a string_view describing the error code
     std::string_view to_string() const noexcept;
 };
 ```
-
-Fatal error codes: `InitFailed`, `WindowClassRegistrationFailed`, `WindowCreationFailed`, `RenderTargetCreationFailed`, `WrongThread`.
 
 ### Helpers
 
@@ -575,8 +659,8 @@ public:
     // Reset all state to defaults. Intended for use in unit tests only.
     void reset() noexcept;
 
-    // Log a message. Template parameters are resolved at compile time.
-    // If L is below the compile-time threshold, the call is eliminated entirely.
+    // Log a message. If L is below the compile-time threshold, the call is
+    // eliminated entirely by the optimizer.
     template <Level L, Domain D>
     void log(std::string_view msg, std::string_view file = {}, int line = 0) noexcept;
 };
@@ -626,8 +710,8 @@ Window "main"
 
 Rules:
 - Indentation is 2 spaces per nesting level.
-- Lines starting with `#` are comments and are ignored.
-- Empty lines are ignored.
+- Lines starting with `#` are comments and are silently skipped.
+- Empty lines are silently skipped.
 - Quoted strings use `"..."`.
 
 ### WidgetSerializer
@@ -647,9 +731,9 @@ public:
 
 ```cpp
 struct ParseError {
-    int         line;     // 1-based line number
-    int         column;   // 1-based column number
-    std::string message;  // human-readable description
+    int         line{0};    // 1-based line number
+    int         column{0};  // 1-based column number
+    std::string message;    // human-readable description
 };
 ```
 
@@ -671,7 +755,7 @@ public:
 
 ## zk::util
 
-Header: `zk/util/native_wrapper.hpp`, `zk/util/enums.hpp`, `zk/util/arithmetic.hpp`, `zk/util/clamp.hpp`
+Header: `zk/util/native_wrapper.hpp`, `zk/util/enums.hpp`, `zk/util/arithmetic.hpp`, `zk/util/clamp.hpp`, `zk/util/arithmetic_op.hpp`
 
 ### NativeWrapper\<Handle, Deleter\>
 
@@ -689,7 +773,7 @@ public:
     NativeWrapper(NativeWrapper&&) noexcept;
     NativeWrapper& operator=(NativeWrapper&&) noexcept;
 
-    Handle get()  const noexcept;
+    Handle get()   const noexcept;
     bool   valid() const noexcept;
     explicit operator bool() const noexcept;
 };
@@ -707,18 +791,21 @@ namespace zk::util {
     constexpr std::string_view to_string(error::ErrorCode)  noexcept;
     constexpr std::string_view to_string(log::Level)        noexcept;
     constexpr std::string_view to_string(log::Domain)       noexcept;
-    constexpr std::string_view to_string(event::EventType)  noexcept;
-    constexpr std::string_view to_string(ui::ButtonState)   noexcept;
-    constexpr std::string_view to_string(core::PumpMode)    noexcept;
+    constexpr std::string_view to_string(event::EventType)  noexcept;  // in event_types.hpp
+    constexpr std::string_view to_string(ui::ButtonState)   noexcept;  // in button.hpp
+    constexpr std::string_view to_string(core::PumpMode)    noexcept;  // in application.hpp
 }
 ```
+
+Note: `EventType`, `ButtonState`, and `PumpMode` overloads are defined in their respective headers to avoid cyclic dependencies.
 
 ### to_underlying
 
 ```cpp
 namespace zk::util {
     // Explicit enum-to-numeric conversion
-    constexpr auto to_underlying(auto e) noexcept;
+    template <typename E> requires std::is_enum_v<E>
+    constexpr std::underlying_type_t<E> to_underlying(E e) noexcept;
 }
 ```
 
@@ -737,6 +824,24 @@ namespace zk::meta {
 namespace zk::util {
     // Clamps val to [lo, hi]
     template <meta::Arithmetic T>
-    constexpr T clamp(T val, T lo, T hi) noexcept;
+    constexpr T clamp(T val, auto lo, auto hi) noexcept;
+}
+```
+
+### arithmetic_op
+
+```cpp
+namespace zk::util {
+    // Same-type overloads
+    template <meta::Arithmetic T> constexpr T add(T a, T b) noexcept;
+    template <meta::Arithmetic T> constexpr T sub(T a, T b) noexcept;
+    template <meta::Arithmetic T> constexpr T mul(T a, T b) noexcept;
+    template <meta::Arithmetic T> constexpr T div(T a, T b) noexcept;
+
+    // Mixed-type overloads — return std::common_type_t<Ty, Tz>
+    template <meta::Arithmetic Ty, meta::Arithmetic Tz> constexpr auto add(Ty a, Tz b) noexcept;
+    template <meta::Arithmetic Ty, meta::Arithmetic Tz> constexpr auto sub(Ty a, Tz b) noexcept;
+    template <meta::Arithmetic Ty, meta::Arithmetic Tz> constexpr auto mul(Ty a, Tz b) noexcept;
+    template <meta::Arithmetic Ty, meta::Arithmetic Tz> constexpr auto div(Ty a, Tz b) noexcept;
 }
 ```

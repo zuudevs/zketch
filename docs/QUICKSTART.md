@@ -207,12 +207,12 @@ All factory methods return `std::expected<T, zk::error::Error>`. Check the resul
 auto result = zk::ui::Window::create("Title", pos, size);
 if (!result) {
     const auto& err = result.error();
-    // err.code    — ErrorCode enum
-    // err.message — human-readable string
+    // err.code         — ErrorCode enum
+    // err.message      — human-readable string
     // err.native_error — GetLastError() or HRESULT
     return 1;
 }
-auto& win = *result;
+auto& win = *result;  // dereference to get the Window value
 ```
 
 ### Widget Ownership
