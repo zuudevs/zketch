@@ -1,0 +1,28 @@
+# IDE
+.vscode/
+.kiro/
+
+# Build output
+bin/
+build/
+
+# Object files
+*.o
+*.obj
+
+# Libraries
+*.a
+*.lib
+*.dll
+*.so
+
+# Executables
+*.exe
+
+# Debug
+*.pdb
+
+# Cache & temp
+.cache/
+*.log
+*.tmp

@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/Project/zketch-v15/build",
+  "command": "D:\\program\\LLVM\\bin\\clang++.exe -D_MBCS -ID:/Project/zketch-v15/zketch -ID:/Project/zketch-v15/PRIVATE -ID:/Project/zketch-v15/include -O0 -std=c++23 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -std=c++23 @CMakeFiles\\zketch.dir\\src\\main.cpp.obj.modmap -o CMakeFiles\\zketch.dir\\src\\main.cpp.obj -c D:\\Project\\zketch-v15\\src\\main.cpp",
+  "file": "D:/Project/zketch-v15/src/main.cpp",
+  "output": "D:/Project/zketch-v15/build/CMakeFiles/zketch.dir/src/main.cpp.obj"
+}
+]
